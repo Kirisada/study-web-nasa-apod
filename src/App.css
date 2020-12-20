@@ -1,38 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+/* App */
 .App {
-  text-align: center;
+	background-image: url(./img/bg01.jpg);
+	background-size: 100%;
+	background-repeat: repeat-y;
+	position: relative;
+	top: 0;
+	overflow: hidden;
+}
+/* Navebar */
+.navbar {
+	position: absolute;
+	top: 0%;
+}
+/* Content */
+.Errorpage {
+	position: absolute;
+	top: 15%;
+	left: 5%;
+}
+.content {
+	position: absolute;
+	top: 0%;
+	text-align: center;
+	width: 100%;
+}
+.contentApod {
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	text-align: left;
+	overflow: hidden;
+}
+.Home {
+	position: absolute;
+	top: 150%;
+	text-align: center;
+	z-index: 10;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Clock */
+.pip {
+	width: 8px;
+	height: 8px;
+	margin: 5px;
+	background-color: #0a91ab;
+	border-radius: 100%;
+	transition: all 0.3s ease-in;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pip--on {
+	background-color: #ffc045;
+	transform: scale(1.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.clock {
+	display: flex;
+	position: relative;
+	top: 15%;
+	right: 0%;
 }
 
-.App-link {
-  color: #61dafb;
+.binary-digit-group {
+	display: flex;
+	margin: 0 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Text Effects */
+.texteffects {
+	color: aliceblue;
+}
+
+/* Tag */
+p {
+	color: #ffc045;
+	font-family: "Space Grotesk";
+}
+.nav-link {
+	color: #ffc045;
+	font-family: "Space Grotesk";
+	font-size: 30px;
+}
+.nav-link:hover {
+	color: #0a91ab;
+}
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+	padding: 0.25rem 0.75rem;
+	color: rgba(255, 255, 255, 0.55);
+	border-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	transition: box-shadow 0.15s ease-in-out;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem;
+}
+/* Photo */
+.nasa-photo {
+	display: flex;
+	padding: 5%;
+	margin: 0 auto;
+	max-height: 100%;
+}
+
+.nasa-photo img {
+	width: 50%;
+	margin-right: 50px;
+	object-fit: contain;
+	max-height: 80vh;
 }
