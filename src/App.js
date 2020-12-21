@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NasaPhoto from "./components/ApodNasa";
 import NavBar from "./components/Navbar";
 import About from "./components/About";
+import Calendar from "./components/Calendar";
 import Errorpage from "./components/Errorpage";
 
 function App() {
@@ -140,6 +141,7 @@ function App() {
 						<Switch>
 							<Route component={Home} path="/" exact />
 							<Route component={NasaPhoto} path="/apod" exact />
+							<Route component={Calendar} path="/calendar" exact />
 							<Route component={About} path="/about" exact />
 							<Route component={Errorpage} />
 						</Switch>

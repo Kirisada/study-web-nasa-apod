@@ -16,7 +16,7 @@ export default function NavBar() {
 		>
 			<nav
 				class="navbar navbar-expand-lg"
-				style={{ background: "rgba(0,0,0,0.5)"}}
+				style={{ background: "rgba(0,0,0,0.5)" }}
 			>
 				<Link class="navbar-brand" to="/">
 					<img
@@ -48,13 +48,13 @@ export default function NavBar() {
 							</Link>
 						</li>
 						<li class="nav-item">
-							<Link class="nav-link" to="#">
-								Calendar
+							<Link class="nav-link" to="/calendar">
+								/ Calendar
 							</Link>
 						</li>
 						<li class="nav-item">
 							<Link class="nav-link" to="/about">
-								About
+								/ About
 							</Link>
 						</li>
 					</ul>
