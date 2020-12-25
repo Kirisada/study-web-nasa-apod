@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../App.css";
+import "bootstrap";
 
 export default function Home() {
 	return (
@@ -9,7 +10,7 @@ export default function Home() {
 				style={{
 					"text-shadow": "5px 5px #0a91ab",
 					fontWeight: "bold",
-					padding: "5%",
+					paddingTop: "15%",
 					color: "#ffc045",
 				}}
 			>

@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import Clock from "./Clock";
 import "../App.css";
 import logo from "../img/nasa_logo.png";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap"
 
 export default function NavBar() {
 	return (
@@ -48,8 +47,8 @@ export default function NavBar() {
 							</Link>
 						</li>
 						<li class="nav-item">
-							<Link class="nav-link" to="/calendar">
-								/ Calendar
+							<Link class="nav-link" to="/gallery">
+								/ ​Gallery
 							</Link>
 						</li>
 						<li class="nav-item">
