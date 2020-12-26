@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Clock from "./Clock";
 import "../App.css";
 import logo from "../img/nasa_logo.png";
-import "bootstrap"
+import "bootstrap";
 
 export default function NavBar() {
 	return (
@@ -44,11 +44,6 @@ export default function NavBar() {
 						<li class="nav-item">
 							<Link class="nav-link" aria-current="page" to="apod">
 								Today's Picture!
-							</Link>
-						</li>
-						<li class="nav-item">
-							<Link class="nav-link" to="/gallery">
-								/ ​Gallery
 							</Link>
 						</li>
 						<li class="nav-item">
