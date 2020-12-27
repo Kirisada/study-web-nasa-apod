@@ -7,7 +7,7 @@ import "bootstrap";
 export default function NavBar() {
 	return (
 		<div
-			className="containe-fluid"
+			className="containe-fluid fixed-top"
 			style={{
 				width: "100%",
 				overflow: "hidden",
@@ -44,6 +44,11 @@ export default function NavBar() {
 						<li class="nav-item">
 							<Link class="nav-link" aria-current="page" to="apod">
 								Today's Picture!
+							</Link>
+						</li>
+						<li class="nav-item">
+							<Link class="nav-link" to="/gallery">
+								/ Gallery
 							</Link>
 						</li>
 						<li class="nav-item">

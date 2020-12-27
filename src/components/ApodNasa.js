@@ -28,27 +28,7 @@ export default function NasaPhoto() {
 	if (!photoData) return <div />;
 
 	return (
-		<div className="contentApod" style={{ top: "120%" }}>
-			<p
-				class="display-6"
-				style={{
-					fontWeight: "bold",
-				}}
-			>
-				Time Machine :{" "}
-				<DatePicker
-					selected={startDate}
-					dateFormat="yyyy-MM-dd"
-					onChange={(date) => setStartDate(date)}
-					minDate={new Date("1995-06-16")}
-					maxDate={new Date()}
-					showMonthDropdown
-					showYearDropdown
-					dropdownMode="select"
-					showDisabledMonthNavigation
-				/>
-			</p>
-
+		<div className="container" style={{paddingTop: "150px"}}>
 			<div
 				class="card md-6"
 				style={{
@@ -56,8 +36,28 @@ export default function NasaPhoto() {
 					width: "70vw",
 					background: "rgba(0,0,0,0.5)",
 					color: "#ffc045",
+					textAlign: "left",
 				}}
 			>
+				<p
+					class="display-6"
+					style={{
+						fontWeight: "bold",
+					}}
+				>
+					Time Machine :{" "}
+					<DatePicker
+						selected={startDate}
+						dateFormat="yyyy-MM-dd"
+						onChange={(date) => setStartDate(date)}
+						minDate={new Date("1995-06-16")}
+						maxDate={new Date()}
+						showMonthDropdown
+						showYearDropdown
+						dropdownMode="select"
+						showDisabledMonthNavigation
+					/>
+				</p>
 				{photoData.media_type === "image" ? (
 					<img
 						src={photoData.url}

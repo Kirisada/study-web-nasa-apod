@@ -7,6 +7,7 @@ import NasaPhoto from "./components/ApodNasa";
 import NavBar from "./components/Navbar";
 import About from "./components/About";
 import Errorpage from "./components/Errorpage";
+import Gallery from "./components/Gallery";
 
 function App() {
 	return (
@@ -141,6 +142,7 @@ function App() {
 							<Route component={Home} path="/" exact />
 							<Route component={NasaPhoto} path="/apod" exact />
 							<Route component={About} path="/about" exact />
+							<Route component={Gallery} path="/gallery" exact />
 							<Route component={Errorpage} />
 						</Switch>
 					</div>
