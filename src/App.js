@@ -134,15 +134,16 @@ function App() {
 						}}
 					/>
 				</div>
+
 				{/* Content */}
 				<div className="container-fluid" style={{ padding: 0, margin: 0 }}>
+					<NavBar />
 					<div className="content">
-						<NavBar />
 						<Switch>
 							<Route component={Home} path="/" exact />
-							<Route component={NasaPhoto} path="/apod" exact />
-							<Route component={About} path="/about" exact />
-							<Route component={Gallery} path="/gallery" exact />
+							<Route component={NasaPhoto} path="/apod" />
+							<Route component={About} path="/about" />
+							<Route component={Gallery} path="/gallery" />
 							<Route component={Errorpage} />
 						</Switch>
 					</div>

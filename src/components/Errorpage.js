@@ -2,7 +2,7 @@ import "../App.css";
 
 export default function Errorpage() {
 	return (
-		<div className="contentError">
+		<div className="container" style={{paddingTop: "150px"}}>
 			<p
 				style={{
 					fontSize: "5rem",
